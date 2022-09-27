@@ -1,4 +1,9 @@
+<?=$this->extend('template')?>
+<?=$this->section('content')?>
+
 <form action="/store" method="post">
+  <div class="row"></div>
+  <div class="col-6">
   <div class="form-group">
     <label for="npm" >NPM</label>
     <input type="text" name="npm" class="form-control" id="npm">
@@ -11,5 +16,15 @@
     <label for="alamat" >Alamat</label>
     <input type="text" name="alamat" class="form-control" id="alamat">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</div>
+<div class="col-6">
+  <div class="form-group">
+    <label for="deskripsi" >Deskripsi</label>
+    <textarea name="alamat" class="form-control" id="deskripsi"></textarea>
+  </div>
+</div>
+  <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i>Submit</button>
 </form>
+
+<?=$this->endSection()?>
